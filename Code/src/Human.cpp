@@ -69,7 +69,7 @@ void Human::move() {
     recCount++;
 
     //check if the human has moved 3 times
-    if (recCount == 2) {
+    if (recCount == HUMAN_BREED) {
         //add valid directions to a vector
         std::vector<int> reproduce;
         if (x - 1 >= 0 && city->getOrganism(x - 1, y) == nullptr) {
@@ -93,19 +93,20 @@ void Human::move() {
             int random = dis(gen);
             int direction = reproduce[random];
 
-            //reproduce in the new location
+
+            //Creates a new human in the direction selected
             if (direction == NORTH) {
-                city->setOrganism(new Human(city, width, height), x, y - 1);
+                city->setOrganism(new Human(city, x, y - 1), x, y - 1);
             } else if (direction == SOUTH) {
-                city->setOrganism(new Human(city, width, height), x, y + 1);
+                city->setOrganism(new Human(city, x, y + 1), x, y + 1);
             } else if (direction == WEST) {
-                city->setOrganism(new Human(city, width, height), x - 1, y);
+                city->setOrganism(new Human(city, x - 1, y), x - 1, y);
             } else if (direction == EAST) {
-                city->setOrganism(new Human(city, width, height), x + 1, y);
+                city->setOrganism(new Human(city, x + 1, y), x + 1, y);
             }
         }
-
-        recCount = 0;
+        //reset the move count
+        recCount = 1;
     }
 
 

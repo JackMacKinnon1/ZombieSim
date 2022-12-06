@@ -39,4 +39,10 @@ void Organism::setMoved(bool moved) {
     this->moved = moved;
 }
 
+int Organism::getX() {
+    return x;
+}
 
+int Organism::getY() {
+    return y;
+}

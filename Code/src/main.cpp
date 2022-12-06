@@ -24,25 +24,25 @@ int main() {
     City *city = new City();
 
     cout << *city;
+    city->countOrganisms();
+    cout << "GENERATION " << city->getGeneration() << endl;
+    cout << "HUMANS: " << city->getHumanCount() << endl;
+    cout << "ZOMBIES: " << city->getZombieCount() << endl;
 
 
-    chrono::milliseconds interval(1000);
 
-    while (true) { //while both humans and zombies exist
+    chrono::milliseconds interval(PAUSE_SECONDS);
+
+    while (city->hasDiversity()) { //while both humans and zombies exist
         this_thread::sleep_for(interval);
         ClearScreen();
         city->move(); //includes all actions
-        cout << *city;
 
-
-// Alternate multi-pass version with each activity happening in its own
-// pass through the array. Lends itself to prototyping and testing:
-    //   city->humansMove();
-    //   city->zombiesMoveEat();
-    //   city->humansRecruit();
-    //   city->zombiesRecruit();
-    //   city->zombiesStarve();
-    //   city->countOrganisms(Z or H goes here);
+        city->countOrganisms();
+        cout << *city; //prints city
+        cout << "GENERATION " << city->getGeneration() << endl;
+        cout << "HUMANS: " << city->getHumanCount() << endl;
+        cout << "ZOMBIES: " << city->getZombieCount() << endl;
 
     }//end while
 }//end main

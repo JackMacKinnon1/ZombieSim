@@ -6,6 +6,7 @@
 #include "City.h"
 #include <vector>
 
+
 using namespace std;
 
 class City;
@@ -20,7 +21,7 @@ protected:
 	bool moved{};
 	City *city;
     char type;
-    int recCount{};
+    int recCount{1};
 
 	enum { WEST, NORTH, EAST, SOUTH, NUM_DIRECTIONS };
 
@@ -35,6 +36,8 @@ public:
 	//virtual void getPosition() = 0;
 
 	void setPosition( int x, int y );
+    int getX();
+    int getY();
     void setMoved(bool moved);
     char getType();
 //	void endTurn();
