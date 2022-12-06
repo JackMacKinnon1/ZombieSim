@@ -124,7 +124,7 @@ ostream &operator<<(ostream &output, City &city) {
                 SetConsoleTextAttribute(hConsole, BLANK_COLOR);
                 output << SPACE_CH;
             }
-            output << ' ';
+            output << "  ";
         }
         output << endl;
     }

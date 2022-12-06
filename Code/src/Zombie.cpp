@@ -160,8 +160,11 @@ void Zombie::move() {
     }
     //If there are no humans, move randomly
     else if (!cordsToMove.empty()) {
-        //Generate a random number
-        int randNum = rand() % cordsToMove.size();
+        //Generate a random number for the cordsToMove vector
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_int_distribution<> dis(0, cordsToMove.size() - 1);
+        int randNum = dis(gen);
 
         //Pick the cords at the random number
         std::vector<int> cords = cordsToMove[randNum];
@@ -273,8 +276,11 @@ void Zombie::move() {
         }
 
         if (!convert.empty()) {
-            //Generate a random number
-            int randNum = rand() % convert.size();
+            //Generate a random number for the convert vector
+            std::random_device rd;
+            std::mt19937 gen(rd());
+            std::uniform_int_distribution<> dis(0, convert.size() - 1);
+            int randNum = dis(gen);
 
             //Pick the human at the random number
             Organism *tOrgan = convert[randNum];
