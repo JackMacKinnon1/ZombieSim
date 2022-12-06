@@ -21,6 +21,7 @@ protected:
     int zombieCount{};
     int generation{};
     bool diverse{true};
+    int killCount{};
 
 
 public:
@@ -41,6 +42,9 @@ public:
     bool hasDiversity();
 
     void countOrganisms();
+    void addKill();
+    int getKillCount();
+    void subKill();
 
 };
 

@@ -294,6 +294,7 @@ void Zombie::move() {
 
             //Resetting the breed count
             recCount = 1;
+            city->addKill();
 
         }
 
@@ -311,6 +312,8 @@ void Zombie::move() {
 
         //delete converted Organism
         delete convertOrgan;
+
+        city->subKill();
     }
 
 }

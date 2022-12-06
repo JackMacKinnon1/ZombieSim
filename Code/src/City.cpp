@@ -166,6 +166,18 @@ bool City::hasDiversity() {
     return diverse;
 }
 
+void City::addKill() {
+    killCount++;
+}
+
+int City::getKillCount() {
+    return killCount;
+}
+
+void City::subKill() {
+    killCount--;
+}
+
 
 
 

@@ -43,6 +43,7 @@ int main() {
         cout << "GENERATION " << city->getGeneration() << endl;
         cout << "HUMANS: " << city->getHumanCount() << endl;
         cout << "ZOMBIES: " << city->getZombieCount() << endl;
+        cout << "KILLS: " << city->getKillCount() << endl;
 
     }//end while
 }//end main
