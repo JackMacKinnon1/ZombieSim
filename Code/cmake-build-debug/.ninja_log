@@ -33,3 +33,11 @@
 5	3299	6921420605084803	CMakeFiles/Code.dir/src/main.cpp.obj	96950013433ab4c5
 20	3406	6921420606151955	CMakeFiles/Code.dir/src/City.cpp.obj	ba836aff5db9c7b9
 3407	3553	6921420607601712	Code.exe	c61a57398a5fbb2
+30	2863	6921422191699424	CMakeFiles/Code.dir/src/Organism.cpp.obj	7c705fd3c970b2e
+13	2933	6921422192388942	CMakeFiles/Code.dir/src/Human.cpp.obj	17ac845d51e65c0b
+7	3141	6921422194483327	CMakeFiles/Code.dir/src/main.cpp.obj	96950013433ab4c5
+17	3148	6921422194543173	CMakeFiles/Code.dir/src/Zombie.cpp.obj	9bdce25e81104492
+25	3201	6921422195082311	CMakeFiles/Code.dir/src/City.cpp.obj	ba836aff5db9c7b9
+3202	3360	6921422196638128	Code.exe	c61a57398a5fbb2
+4	1771	6921422801568374	CMakeFiles/Code.dir/src/Zombie.cpp.obj	9bdce25e81104492
+1771	1893	6921422802807584	Code.exe	c61a57398a5fbb2

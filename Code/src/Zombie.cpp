@@ -153,6 +153,7 @@ void Zombie::move() {
 
         //Resetting the zombies eat count
         starveCount = 1;
+        city->addKill();
 
         //delete the human
         delete tOrgan;
