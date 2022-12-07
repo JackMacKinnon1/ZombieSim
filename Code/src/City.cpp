@@ -129,6 +129,13 @@ ostream &operator<<(ostream &output, City &city) {
         output << endl;
     }
     SetConsoleTextAttribute(hConsole, 7);
+
+    city.countOrganisms();
+    cout << "GENERATION " << city.getGeneration() << endl;
+    cout << "HUMANS: " << city.getHumanCount() << endl;
+    cout << "ZOMBIES: " << city.getZombieCount() << endl;
+    SetConsoleTextAttribute(hConsole, ZOMBIE_COLOR);
+    cout << "KILLS: " << city.getKillCount() << endl;
     return output;
 }
 

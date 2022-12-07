@@ -24,10 +24,6 @@ int main() {
     City *city = new City();
 
     cout << *city;
-    city->countOrganisms();
-    cout << "GENERATION " << city->getGeneration() << endl;
-    cout << "HUMANS: " << city->getHumanCount() << endl;
-    cout << "ZOMBIES: " << city->getZombieCount() << endl;
 
 
 
@@ -38,12 +34,8 @@ int main() {
         ClearScreen();
         city->move(); //includes all actions
 
-        city->countOrganisms();
         cout << *city; //prints city
-        cout << "GENERATION " << city->getGeneration() << endl;
-        cout << "HUMANS: " << city->getHumanCount() << endl;
-        cout << "ZOMBIES: " << city->getZombieCount() << endl;
-        cout << "KILLS: " << city->getKillCount() << endl;
+
 
     }//end while
 }//end main
