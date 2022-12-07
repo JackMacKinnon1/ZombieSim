@@ -310,14 +310,12 @@ void Zombie::move() {
         Organism *convertOrgan = city->getOrganism(x, y);
 
         //set this grid location to a new human
-        //city->setOrganism(new Human(city, x, y), x, y);
-        city->setOrganism(nullptr, x, y);
+        city->setOrganism(new Human(city, x, y), x, y);
+        //city->setOrganism(nullptr, x, y);
         //delete converted Organism
-        //city->subKill();
+        city->subKill();
 
         delete convertOrgan;
-
-
     }
 
 }
