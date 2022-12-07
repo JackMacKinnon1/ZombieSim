@@ -16,7 +16,6 @@ Zombie::~Zombie() = default;
 void Zombie::move() {
     if (moved) return;
     moved = true;
-    recCount++;
     starveCount++;
 
     //look around including diagonals for humans
@@ -299,6 +298,9 @@ void Zombie::move() {
         }
 
     }
+    else { //The zombie did not breed
+        recCount++;
+    }
 
     //Starve routine
 
@@ -308,10 +310,10 @@ void Zombie::move() {
         Organism *convertOrgan = city->getOrganism(x, y);
 
         //set this grid location to a new human
-        city->setOrganism(new Human(city, x, y), x, y);
-        //city->setOrganism(nullptr, x, y);
+        //city->setOrganism(new Human(city, x, y), x, y);
+        city->setOrganism(nullptr, x, y);
         //delete converted Organism
-        city->subKill();
+        //city->subKill();
 
         delete convertOrgan;
 

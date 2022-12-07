@@ -22,10 +22,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/GameSpecs.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/GameSpecs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/City.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zombie.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zombie.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,7 @@
       <workItem from="1670344441684" duration="1879000" />
       <workItem from="1670351795960" duration="1596000" />
       <workItem from="1670357874394" duration="1748000" />
-      <workItem from="1670431408121" duration="3046000" />
+      <workItem from="1670431408121" duration="4343000" />
     </task>
     <task id="LOCAL-00001" summary="Finished assignment 4, actually this time">
       <created>1670352801788</created>
@@ -109,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670352801788</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished assignment 4, actually actually this time">
+      <created>1670436988056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670436988056</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +132,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished assignment 4, actually this time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished assignment 4, actually this time" />
+    <MESSAGE value="Finished assignment 4, actually actually this time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished assignment 4, actually actually this time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
